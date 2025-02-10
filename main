@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О разработчике</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #444;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .buttons a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>О разработчике</h1>
+    <p>Этот сайт разработан <strong>Иваном Ивановым</strong> с целью демонстрации навыков в веб-разработке и предоставления полезной информации пользователям.</p>
+    <p>Цель разработки — создание удобного и функционального интерфейса для взаимодействия с пользователями.</p>
+
+    <div class="buttons">
+        <a href="https://example.com" target="_blank">Перейти на Example.com</a>
+        <a href="https://anotherexample.com" target="_blank">Перейти на AnotherExample.com</a>
+    </div>
+
+    <script>
+        // Пример простого JavaScript
+        document.querySelector('h1').addEventListener('click', function() {
+            alert('Спасибо за внимание!');
+        });
+    </script>
+</body>
+</html>
