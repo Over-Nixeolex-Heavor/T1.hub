@@ -1,0 +1,55 @@
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAGO - Строительство из Блоков</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.152.2/build/three.module.js",
+      "OrbitControls": "https://unpkg.com/three@0.152.2/examples/jsm/controls/OrbitControls.js"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="loading">
+    <img src="/lv_0_20250325170945.gif" alt="Загрузка">
+  </div>
+  
+  <div id="tabs">
+    <div id="tabsNav">
+      <button data-tab="build" class="active">Строить</button>
+      <button data-tab="bag">Сумка</button>
+      <button data-tab="earn">Заработать</button>
+      <button data-tab="friends">Друзья</button>
+    </div>
+    <div id="tabsContent">
+      <div id="tab-build" class="tab-panel active">
+        <div id="blockCount">Осталось блоков: 200</div>
+        <button id="finishBuildBtn">Завершить строительство</button>
+      </div>
+      <div id="tab-bag" class="tab-panel">
+        <h3>Ваши постройки</h3>
+        <ul id="bagList"></ul>
+      </div>
+      <div id="tab-earn" class="tab-panel">
+        <h3>Задания</h3>
+        <p>Нет доступных заданий.</p>
+      </div>
+      <div id="tab-friends" class="tab-panel">
+        <h3>Друзья</h3>
+        <button id="copyLink">Скопировать ссылку</button>
+        <span id="copyMsg" style="display:none;">Ссылка скопирована!</span>
+      </div>
+    </div>
+  </div>
+  
+  <div id="notification" class="notification"></div>
+  
+  <div id="gameContainer"></div>
+  
+  <script type="module" src="main.js"></script>
+</body>
+</html>
