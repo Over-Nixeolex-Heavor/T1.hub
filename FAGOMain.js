@@ -406,13 +406,7 @@ window.addEventListener('beforeunload', saveGameState);
 
 
 
-// Hide the loading screen once the window is loaded
-
 window.addEventListener('load', () => {
-
-  const loading = document.getElementById('loading');
-
-  if (loading) loading.style.display = 'none';
 
   loadSavedData();
 
