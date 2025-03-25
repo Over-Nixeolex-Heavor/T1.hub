@@ -1,4 +1,4 @@
-import { STARTING_BLOCKS, BLOCK_SIZE, AUTOSAVE_INTERVAL } from './config.js';
+import { STARTING_BLOCKS, BLOCK_SIZE, AUTOSAVE_INTERVAL } from 'FAGOConfig.js';
 
 import * as THREE from 'three';
 
