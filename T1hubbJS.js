@@ -101,4 +101,25 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.setProperty('--mouse-y', `${y}px`);
         });
     });
+
+    // Add carousel functionality
+    const carousel = document.querySelector('.carousel');
+    const prevButton = document.querySelector('.carousel-button.prev');
+    const nextButton = document.querySelector('.carousel-button.next');
+    
+    if (carousel && prevButton && nextButton) {
+        prevButton.addEventListener('click', () => {
+            carousel.scrollBy({
+                left: -320,
+                behavior: 'smooth'
+            });
+        });
+        
+        nextButton.addEventListener('click', () => {
+            carousel.scrollBy({
+                left: 320,
+                behavior: 'smooth'
+            });
+        });
+    }
 });
