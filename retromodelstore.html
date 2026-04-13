@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>iOS 2 Test App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <link rel="stylesheet" href="retromodelstore.css" />
+</head>
+<body>
+  <div class="status-bar">
+    <div class="status-left">
+      <span class="signal-dots">
+        <span></span><span></span><span></span><span></span><span></span>
+      </span>
+      <span class="carrier">iTest</span>
+    </div>
+    <div class="status-center">9:41 AM</div>
+    <div class="status-right">
+      <span class="battery">
+        <span class="battery-level"></span>
+      </span>
+    </div>
+  </div>
+
+  <div class="app-window app-root">
+    <div class="app-nav">
+      <span class="app-nav-side"></span>
+      <span class="app-title" id="app-title"></span>
+      <span class="app-balance" id="app-balance"></span>
+    </div>
+    <div class="app-content" id="app-content"></div>
+  </div>
+
+  <script type="module" src="retromodelstore.js"></script>
+</body>
+</html>
